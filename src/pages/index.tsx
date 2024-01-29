@@ -11,7 +11,7 @@ import * as color from 'color';
 
 export const quickLinks = [
   {
-    title: 'Manifold Finance',
+    title: 'MEV Auction Platform',
     href: '#',
     icon: InformationCircleIcon,
     to: './docs/intro',
@@ -21,7 +21,7 @@ export const quickLinks = [
     title: 'Reference',
     href: '#',
     icon: InformationCircleIcon,
-    to: './docs/Developers/Overview',
+    to: './docs/Developers/market-design',
     text: `Reference guides are technical descriptions of the machinery and how to operate it. Reference material is information-oriented`,
   },
   {
@@ -35,7 +35,7 @@ export const quickLinks = [
 
 export const Guides = [
   {
-    title: 'How To',
+    title: 'Auction Participation How To',
     text: 'How-to guides are directions that take the reader through the steps required to solve a real-world problem. How-to guides are goal-oriented.',
     to: '#',
   },
@@ -45,7 +45,7 @@ export const Guides = [
     to: '#',
   },
   {
-    title: 'How to integrate application performance monitoring',
+    title: 'How to integrate bidding strategies into contracts',
     text: 'This guide shows you how to…',
     to: '#',
   },
@@ -53,22 +53,22 @@ export const Guides = [
 
 export const github = [
   {
-    title: 'OpenMEV SDK',
+    title: 'MEV Auction SDK',
     href: '#',
     icon: CodeIcon,
   },
   {
-    title: 'SecureRpc Provider',
+    title: 'Relay Provider',
     href: '#',
     icon: CodeIcon,
   },
   {
-    title: 'SecureRpc Contracts',
+    title: 'Bidding Contracts',
     href: '#',
     icon: CodeIcon,
   },
   {
-    title: 'Manifold Staking',
+    title: 'Support',
     href: '#',
     icon: CodeIcon,
   },
@@ -265,8 +265,7 @@ export default function Home() {
           <div>
             <h2>Learning Oriented</h2>
             <p>
-              learning-oriented phase: We begin by learning, and learning a skill means diving
-              straight in to do it - under the guidance of a teacher, if we’re lucky
+              Auction and Market design and theory
             </p>
             <div>
               {Guides.map((guide) => (
@@ -292,8 +291,8 @@ export default function Home() {
             </div>
           </div>
           <div>
-            <h2>Developer Tasks</h2>
-            <p>Ttask-oriented phase: Next we want to put the skill to work.</p>
+            <h2>Developers</h2>
+            <p>Task-oriented for Builders and Searchers</p>
             {github.map((action) => (
               <Link style={{ textDecoration: 'none' }} href={action.href}>
                 <Card key={action.title} style={{ marginBottom: '1rem' }}>
